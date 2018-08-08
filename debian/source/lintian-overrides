@@ -1,0 +1,12 @@
+rpi-patches: source-contains-prebuilt-binary *
+rpi-patches: debian-watch-may-check-gpg-signature *
+rpi-patches: arch-independent-package-contains-binary-or-object *
+rpi-patches: spelling-error-in-binary *
+rpi-patches: binary-has-unneeded-section *
+rpi-patches: embedded-library *
+rpi-patches: statically-linked-binary *
+rpi-patches: duplicate-conffile *
+rpi-patches: extended-description-line-too-long *
+rpi-patches: package-contains-empty-directory *
+rpi-patches: unused-override *
+rpi-patches: debian-watch-may-check-gpg-signature

@@ -1,0 +1,33 @@
+#!/bin/sh
+# vim:ts=2:sw=2:et
+
+set -e
+
+case "$1" in
+  configure)
+
+    for file in /usr/lib/raspi3-firmware/*
+    do
+      file=$( basename "$file" )
+      cp "/usr/lib/raspi3-firmware/$file" "/boot/$file"
+      # sync might fail when running under qemu, which, as of version 2.7,
+      # has not implemented the syncfs syscall.
+      sync -f "/boot/$file" || true
+    done
+
+    # Manually trigger the kernel postinst hook when raspi3-firmware is first
+    # installed (or upgraded), as the kernel package might already be installed
+    # (or not upgraded) and hence the hook would not get triggered otherwise.
+    DEB_MAINT_PARAMS="configure" /etc/kernel/postinst.d/50raspi3-firmware
+    ;;
+esac
+
+dpkg-maintscript-helper rm_conffile /etc/kernel/postinst.d/linux-firmware-raspi3 1.20161123-2 -- "$@"
+
+true "INFO: debhelper beginning here."
+
+#DEBHELPER#
+
+true "INFO: Done with debhelper."
+
+exit 0

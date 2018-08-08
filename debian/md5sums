@@ -1,0 +1,14 @@
+8c3cb6d8f0609b43f09d083b4006ec5a  lib/firmware/brcm/brcmfmac43430-sdio.txt
+17efaf1c1ef89289168d71cdc8194982  usr/lib/raspi3-firmware/bootcode.bin
+2ce1581f76f6de62d1b85e003e645f4b  usr/lib/raspi3-firmware/fixup.dat
+369267d35eb5b8fceb3fd8bb87591f22  usr/lib/raspi3-firmware/fixup_cd.dat
+5a928bcd833d923631cf4f9dace377c6  usr/lib/raspi3-firmware/fixup_db.dat
+e5c45b92e0adba94426f171f0ecb01e1  usr/lib/raspi3-firmware/fixup_x.dat
+c1fcc378ae463ea7cfe6fab4c69a3676  usr/lib/raspi3-firmware/start.elf
+be066d19d562f9befaf02886b4957b83  usr/lib/raspi3-firmware/start_cd.elf
+0ff37f60bbb0b8b33f1df50278028392  usr/lib/raspi3-firmware/start_db.elf
+31896762fd22769fc94c7846ae9895f8  usr/lib/raspi3-firmware/start_x.elf
+4916a4464675ca710fde8fd632c5cf0b  usr/share/doc/raspi3-firmware/changelog.Debian.gz
+e06b9997e2452a1ca118f0d9b4a59b31  usr/share/doc/raspi3-firmware/copyright
+94fa42707f0229ad0c8eae5a87c7b735  usr/share/initramfs-tools/hooks/raspi3-firmware-fsck
+f2dd06206274629bc5d085b0afb88fdf  usr/share/lintian/overrides/raspi3-firmware

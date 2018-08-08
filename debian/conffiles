@@ -1,0 +1,3 @@
+/etc/initramfs/post-update.d/50raspi3-firmware
+/etc/kernel/postinst.d/50raspi3-firmware
+/etc/kernel/postrm.d/50raspi3-firmware

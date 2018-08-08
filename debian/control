@@ -1,0 +1,22 @@
+## Copyright (C) 2012 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: rpi-patches
+Section: non-free/misc
+Priority: optional
+Maintainer: Algernon <33966997+Algernon-01@users.noreply.github.com>
+Build-Depends: debhelper (>= 9), genmkfile
+Homepage: https://www.whonix.org/wiki/rpi-patches
+Vcs-Browser: https://github.com/Whonix/rpi-patches
+Vcs-Git: https://github.com/Whonix/rpi-patches.git
+Standards-Version: 3.9.8
+
+Package: rpi-patches
+Architecture: all
+Depends: dosfstools, ${misc:Depends}
+Description: Raspberry Pi 2 and 3 GPU firmware and bootloaders
+ This package contains all the proprietary files necessary to boot a
+ Raspberry Pi 2 or 3 board + Whonix patches for config.txt, 
+ fstab, and interfaces.
+ .
+ Raspberry Pi is a trademark of the Raspberry Pi Foundation.
